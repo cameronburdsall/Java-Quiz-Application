@@ -1,0 +1,28 @@
+package Quiz;
+
+import java.util.*;
+
+public class matchingGameDatabase {
+	
+	private List<stateQuestion> qList = new ArrayList<stateQuestion>();
+	final String[] STATES = {"Alabama","Alaska","Arizona","Arkansas",
+			"California","Colorado","Connecticut","Delaware",
+			"Florida","Georgia","Hawaii","Idaho","Illinois",
+			"Indiana","Iowa","Kansas","Kentucky","Louisiana",
+			"Maine","Maryland","Massachusetts","Michigan",
+			"Minnesota","Mississippi","Missouri","Montana",
+			"Nebraska","Nevada","New Hampshire","New Jersey",
+			"New Mexico","New York","North Carolina","North Dakota",
+			"Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island",
+			"South Carolina","South Dakota","Tennessee","Texas","Utah",
+			"Vermont","Virginia","Washington","West Virginia",
+			"Wisconsin","Wyoming"};
+	
+	private int qCounter;
+	//File i/o stuff
+	matchingGameDatabase() {
+	
+		qCounter = qList.size();
+	}
+	
+}
