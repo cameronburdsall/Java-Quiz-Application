@@ -1,4 +1,5 @@
 package Admin;
+import Quiz.mathGameDatabase;
 
 import java.awt.Container;
 import java.awt.FlowLayout;
@@ -8,6 +9,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 public class addQuestion extends JFrame implements ActionListener
@@ -18,7 +20,7 @@ public class addQuestion extends JFrame implements ActionListener
 	public addQuestion ()
 	{
 		super ("Enter Student Name");
-		setSize (500, 100);
+		setSize (600, 100);
 		Container container = getContentPane();
 		container.setLayout (new FlowLayout());
 		
@@ -31,13 +33,14 @@ public class addQuestion extends JFrame implements ActionListener
 		op = new JTextField(10);
 		
 		submit = new JButton ("Submit");
+		submit.addActionListener(this);
 		
 		container.add(num1L);
 		container.add(num1);
 		container.add(num2L);
 		container.add(num2);
 		container.add(opL);
-		container.add(opL);
+		container.add(op);
 		container.add(submit);
 		
 		setLocationRelativeTo(null);
@@ -47,6 +50,27 @@ public class addQuestion extends JFrame implements ActionListener
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-		
+		mathGameDatabase questions = new mathGameDatabase();
+		questions.readQuestions();
+		String val1 = num1.getText();
+		String val2 = num2.getText();
+		String oper = op.getText();
+		try {
+			int inNum1 = Integer.parseInt(val1);
+			int inNum2 = Integer.parseInt(val2);
+			char operation = oper.charAt(0);
+			if (!(operation=='+' || operation == '-' || operation == '*'))
+			{
+				JOptionPane.showMessageDialog(null,"Invalid Operation... only:  +  -  *");
+				return;
+			}
+			questions.addQuestion(inNum1, inNum2, operation);
+			questions.writeQuestions();
+			this.dispose();
+		}
+		catch (NumberFormatException ex)
+		{
+			JOptionPane.showMessageDialog(null,"Please input a number");
+		}
 	}
 }

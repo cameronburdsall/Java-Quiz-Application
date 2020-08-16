@@ -73,7 +73,6 @@ public class namePrompt extends JFrame implements ActionListener
 			{
 				new showStudentDetails(admin.getStudent(stdntName.getText()));
 				new changeStudentScore(admin, stdntName.getText());
-				new showStudentDetails(admin.getStudent(stdntName.getText()));
 				this.dispose();
 			}
 			else {

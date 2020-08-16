@@ -128,17 +128,17 @@ class Event2 extends JFrame implements ActionListener
         
          frame.setLayout(null);
          
-         BufferedImage check = ImageIO.read(new File("I:\\COEN160-project\\final\\Images\\puzzleimages\\c.jpg"));
+         BufferedImage check = ImageIO.read(new File("files/Images/puzzleImages/c.jpg"));
      
-         BufferedImage i1 = ImageIO.read(new File("I:\\COEN160-project\\final\\Images\\puzzleimages\\sunflower1.jpg"));
-         BufferedImage i2 = ImageIO.read(new File("I:\\COEN160-project\\final\\Images\\puzzleimages\\sunflower2.jpg"));
-         BufferedImage i3 = ImageIO.read(new File("I:\\COEN160-project\\final\\Images\\puzzleimages\\sunflower3.jpg"));
-         BufferedImage i4 = ImageIO.read(new File("I:\\COEN160-project\\final\\Images\\puzzleimages\\sunflower4.jpg"));
-         BufferedImage i5 = ImageIO.read(new File("I:\\COEN160-project\\final\\Images\\puzzleimages\\sunflower5.jpg"));
-         BufferedImage i6 = ImageIO.read(new File("I:\\COEN160-project\\final\\Images\\puzzleimages\\sunflower6.jpg"));
-         BufferedImage i7 = ImageIO.read(new File("I:\\COEN160-project\\final\\Images\\puzzleimages\\sunflower7.jpg"));
-         BufferedImage i8 = ImageIO.read(new File("I:\\COEN160-project\\final\\Images\\puzzleimages\\sunflower8.jpg"));
-         BufferedImage i9 = ImageIO.read(new File("I:\\COEN160-project\\final\\Images\\puzzleimages\\sunflower9.jpg"));
+         BufferedImage i1 = ImageIO.read(new File("files/Images/puzzleImages/sunflower1.jpg"));
+         BufferedImage i2 = ImageIO.read(new File("files/Images/puzzleImages/sunflower2.jpg"));
+         BufferedImage i3 = ImageIO.read(new File("files/Images/puzzleImages/sunflower3.jpg"));
+         BufferedImage i4 = ImageIO.read(new File("files/Images/puzzleImages/sunflower4.jpg"));
+         BufferedImage i5 = ImageIO.read(new File("files/Images/puzzleImages/sunflower5.jpg"));
+         BufferedImage i6 = ImageIO.read(new File("files/Images/puzzleImages/sunflower6.jpg"));
+         BufferedImage i7 = ImageIO.read(new File("files/Images/puzzleImages/sunflower7.jpg"));
+         BufferedImage i8 = ImageIO.read(new File("files/Images/puzzleImages/sunflower8.jpg"));
+         BufferedImage i9 = ImageIO.read(new File("files/Images/puzzleImages/sunflower9.jpg"));
         
          one = new PuzzleGame(i1); 
          two = new PuzzleGame(i2); 
@@ -368,8 +368,7 @@ class PuzzleGame extends MyButton3
   /*
     public static void main(String[] args) throws Exception
     {
-        Event1 w = new Event1(); 
-    	w.openWindow1(); 
+        
     	
     	
     	

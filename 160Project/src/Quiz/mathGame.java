@@ -59,35 +59,32 @@ public class mathGame extends JFrame implements ActionListener {
 						
 						// Write a statement to convert the input value (a string) into an integer
 						in = Integer.parseInt(input);
-						
-					}
-					catch(NumberFormatException ex){ 
-						JOptionPane.showMessageDialog(null,"Please input a number"); 
-						dispose();
+						if(answer == in) {	//correct
+							if(num>=5) {
+								tot++;
+								System.out.println (num + "\t" + tot);
+								st.setMathPoints(st.getMathPoints() + num - 1);
+								st.setMathPointsTot(st.getMathPointsTot() + tot);
+								new HomePage(st);
+								tot=0;
+								dispose();
+							}
+							else {
+								tot++;
+								new mathGame(num+1, st);
+								dispose();
 
-					}
-					if(answer == in) {	//correct
-						if(num>=5) {
-							tot++;
-							System.out.println (num + "\t" + tot);
-							st.setMathPoints(st.getMathPoints() + num);
-							st.setMathPointsTot(st.getMathPointsTot() + tot);
-							new HomePage(st);
-							tot=0;
-							dispose();
+							}
 						}
 						else {
 							tot++;
-							new mathGame(num+1, st);
-							dispose();
-
+							new incorrectWindow();	
 						}
-					}
-					else {
-						tot++;
-						new incorrectWindow();
-								
 						
+					}
+					catch(NumberFormatException ex){ 
+						JOptionPane.showMessageDialog(null,"Please input a number");
+
 					}
 				}
 			}

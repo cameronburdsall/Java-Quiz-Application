@@ -35,28 +35,28 @@ public class ButtonPressGame extends JFrame implements ActionListener {
 		Icon i1, i2, i3, i4;
 		switch(i) {
 			case 0:
-				i1 = new ImageIcon("I:\\COEN160-project\\final\\Images\\states\\"+current.getCI()+".jpg");
-				i2 = new ImageIcon("I:\\COEN160-project\\final\\Images\\states\\"+current.getW1()+".jpg");
-				i3 = new ImageIcon("I:\\COEN160-project\\final\\Images\\states\\"+current.getW2()+".jpg");
-				i4 = new ImageIcon("I:\\COEN160-project\\final\\Images\\states\\"+current.getW3()+".jpg");
+				i1 = new ImageIcon("files/Images/states/"+current.getCI()+".jpg");
+				i2 = new ImageIcon("files/Images/states/"+current.getW1()+".jpg");
+				i3 = new ImageIcon("files/Images/states/"+current.getW2()+".jpg");
+				i4 = new ImageIcon("files/Images/states/"+current.getW3()+".jpg");
 				break;
 			case 1:
-				i1 = new ImageIcon("I:\\COEN160-project\\final\\Images\\states\\"+current.getW1()+".jpg");
-				i2 = new ImageIcon("I:\\COEN160-project\\final\\Images\\states\\"+current.getCI()+".jpg");
-				i3 = new ImageIcon("I:\\COEN160-project\\final\\Images\\states\\"+current.getW2()+".jpg");
-				i4 = new ImageIcon("I:\\COEN160-project\\final\\Images\\states\\"+current.getW3()+".jpg");
+				i1 = new ImageIcon("files/Images/states/"+current.getW1()+".jpg");
+				i2 = new ImageIcon("files/Images/states/"+current.getCI()+".jpg");
+				i3 = new ImageIcon("files/Images/states/"+current.getW2()+".jpg");
+				i4 = new ImageIcon("files/Images/states/"+current.getW3()+".jpg");
 				break;
 			case 2:
-				i1 = new ImageIcon("I:\\COEN160-project\\final\\Images\\states\\"+current.getW2()+".jpg");
-				i2 = new ImageIcon("I:\\COEN160-project\\final\\Images\\states\\"+current.getW1()+".jpg");
-				i3 = new ImageIcon("I:\\COEN160-project\\final\\Images\\states\\"+current.getCI()+".jpg");
-				i4 = new ImageIcon("I:\\COEN160-project\\final\\Images\\states\\"+current.getW3()+".jpg");
+				i1 = new ImageIcon("files/Images/states/"+current.getW2()+".jpg");
+				i2 = new ImageIcon("files/Images/states/"+current.getW1()+".jpg");
+				i3 = new ImageIcon("files/Images/states/"+current.getCI()+".jpg");
+				i4 = new ImageIcon("files/Images/states/"+current.getW3()+".jpg");
 				break;
 			default:
-				i1 = new ImageIcon("I:\\COEN160-project\\final\\Images\\states\\"+current.getW3()+".jpg");
-				i2 = new ImageIcon("I:\\COEN160-project\\final\\Images\\states\\"+current.getW1()+".jpg");
-				i3 = new ImageIcon("I:\\COEN160-project\\final\\Images\\states\\"+current.getW2()+".jpg");
-				i4 = new ImageIcon("I:\\COEN160-project\\final\\Images\\states\\"+current.getCI()+".jpg");
+				i1 = new ImageIcon("files/Images/states/"+current.getW3()+".jpg");
+				i2 = new ImageIcon("files/Images/states/"+current.getW1()+".jpg");
+				i3 = new ImageIcon("files/Images/states/"+current.getW2()+".jpg");
+				i4 = new ImageIcon("files/Images/states/"+current.getCI()+".jpg");
 				break;
 		}
 		//System.out.println(current.getCI());

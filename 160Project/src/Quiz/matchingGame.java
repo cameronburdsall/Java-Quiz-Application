@@ -38,7 +38,7 @@ public class matchingGame extends JFrame implements ActionListener {
         
         if(qCorrect == 0)
 		{
-			Image monkeyIm = new ImageIcon("I:\\COEN160-project\\final\\Images\\animals\\monkey.jpg.png").getImage().getScaledInstance(150, 260, Image.SCALE_DEFAULT); 
+			Image monkeyIm = new ImageIcon("files/Images/animalGame/monkey.jpg.png").getImage().getScaledInstance(150, 260, Image.SCALE_DEFAULT); 
 			ImageIcon monkeyIc = new ImageIcon(monkeyIm); 
 		    monkey = new JLabel(); 
 			monkey.setIcon(monkeyIc);
@@ -57,7 +57,7 @@ public class matchingGame extends JFrame implements ActionListener {
       
         if(qCorrect == 1)
         {
-        	Image giraffeIm = new ImageIcon("I:\\COEN160-project\\final\\Images\\animals\\giraffe.jpg.png").getImage().getScaledInstance(100, 200, Image.SCALE_DEFAULT); 
+        	Image giraffeIm = new ImageIcon("files/Images/animalGame/giraffe.jpg.png").getImage().getScaledInstance(100, 200, Image.SCALE_DEFAULT); 
     		ImageIcon giraffeIc = new ImageIcon(giraffeIm); 
     		giraffe = new JLabel(); 
     		giraffe.setIcon(giraffeIc);
@@ -76,7 +76,7 @@ public class matchingGame extends JFrame implements ActionListener {
         
         if(qCorrect == 2)
 		{
-			Image lionIm = new ImageIcon("I:\\COEN160-project\\final\\Images\\animals\\lion.jpg.png").getImage().getScaledInstance(180, 150, Image.SCALE_DEFAULT); 
+			Image lionIm = new ImageIcon("files/Images/animalGame/lion.jpg.png").getImage().getScaledInstance(180, 150, Image.SCALE_DEFAULT); 
 			ImageIcon lionIc = new ImageIcon(lionIm); 
 			lion = new JLabel(); 
 			lion.setIcon(lionIc);
@@ -94,7 +94,7 @@ public class matchingGame extends JFrame implements ActionListener {
         
         else if(qCorrect == 3)
 		{
-			Image elephantIm = new ImageIcon("I:\\COEN160-project\\final\\Images\\animals\\elephant.jpg.png").getImage().getScaledInstance(150, 200, Image.SCALE_DEFAULT); 
+			Image elephantIm = new ImageIcon("files/Images/animalGame/elephant.jpg.png").getImage().getScaledInstance(150, 200, Image.SCALE_DEFAULT); 
 			ImageIcon elephantIc = new ImageIcon(elephantIm); 
 			elephant = new JLabel(); 
 			elephant.setIcon(elephantIc);
