@@ -1,4 +1,7 @@
-COEN 160 Final Project Usage Instructions
+ Final Project Usage Instructions
+
+In order to properly run the application, please download this whole repo and then run the JAR file. If this is not done, then
+the JAR will not be able to access serialized resources or images.
 
 Launching the Application:
 	You can run the application from the .jar executable, which will launch it in the JRE.
